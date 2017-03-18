@@ -41,7 +41,7 @@ if __name__ == "__main__":
 		try:
 			username = repo_url[repo_url.index("github.com")+1]
 			repo_name = repo_url[repo_url.index(username)+1]
-			client = Github("meenuganesh91", "AmenRedWim3")
+			client = Github()
 			user = client.get_user(username)
 			repo = user.get_repo(repo_name)
 			app.run(debug=True, host='0.0.0.0')
